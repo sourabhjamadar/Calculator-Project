@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+</head>
+<body>
+    <style type="text/css">
+        .calc{
+            background-color: white;
+            height:370px;
+            width:250px;
+            margin: 10% 30%;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 10px 10px 10px grey;
+            background-image:https://img.freepik.com/free-vector/math-science-concept-with-school-lesson-items-retro-cartoon-style_1284-8084.jpg?size=626&ext=jpg&ga=GA1.1.1701294547.1698947368&semt=ais ;
+        }
+        input{
+            width:50px;
+            height: 50px;
+            background-color: black;
+            color:floralwhite;
+            border: none;
+            border-radius: 20px;
+            margin:4px 4px;
+            font-weight: bolder;
+            transition-duration:0.5s;
+            font-size: 30px;
+        }
+        .operator{
+            baground color: orange;
+        }
+        .ac{
+            width: 104px;
+            margin-right: 15px;
+        }
+        .op{
+            height: 70px;
+            width: 230px;
+            background-color: palegreen;
+            text-align: right;
+            text color:black ;
+        }
+        #allclear{
+            background-color: darkcyan;
+        }
+
+        .operator:hover
+        {
+            transform: scale(0.9);
+        }
+        input[type="button"]:hover
+        {
+            transform: scale(0.9);
+            box-shadow: 0px 0px 5px 5px orange;
+
+        }
+          .operator {
+            background-color: orangered;
+          }
+
+          #equal{
+            background-color: orange;
+          }
+        bd{
+           
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body bg bgcolor="whitesmoke"  background-image:https://img.freepik.com/free-vector/math-science-concept-with-school-lesson-items-retro-cartoon-style_1284-8084.jpg?size=626&ext=jpg&ga=GA1.1.1701294547.1698947368&semt=ais ;>
+    <div class="calc">
+        <form>
+            <div>
+                <input type="text" name="op"   value=" " class="op">
+            </div>
+            <div>
+                <input type="button" value="AC" onclick="op.value=''"  class="ac" id="allclear">
+                <input type="button" value="C" onclick="op.value+=''" class="operator" >
+                <input type="button" value="%" onclick="op.value+='%'" class="operator">
+            </div>
+             <div>
+                <input type="button" value="7" onclick="op.value+='7'" >
+                <input type="button" value="8" onclick="op.value+='8'" >
+                <input type="button" value="9" onclick="op.value+='9'" >
+                <input type="button" value="+" onclick="op.value+='+'" class="operator">
+            </div>
+             <div>
+                <input type="button" value="4" onclick="op.value+='4'" >
+                <input type="button" value="5" onclick="op.value+='5'" >
+                <input type="button" value="6" onclick="op.value+='6'" >
+                <input type="button" value="-" onclick="op.value+='-'" class="operator">
+
+            </div>
+             <div>
+                <input type="button" value="1" onclick="op.value+='1'" >
+                <input type="button" value="2" onclick="op.value+='2'" >
+                <input type="button" value="3" onclick="op.value+='3'" >
+                <input type="button" value="x" onclick="op.value+='*'" class="operator">
+            </div>
+             <div>
+                <input type="button" value="." onclick="op.value+='.'" >
+                <input type="button" value="0" onclick="op.value+='0'" >
+                <input type="button" value="=" onclick="op.value=eval(op.value)" id="equal" >
+                <input type="button" value="/" onclick="op.value+='/'" class="operator">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+            
+
